@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Weather App! This is a dynamic weather application that allows users to fetch weather data for cities and countries, mark favorite cities, and toggle between dark and light themes. The app also provides temperature conversion functionality between Celsius and Fahrenheit. The data is fetched using Redux for efficient state management.
 
-## Available Scripts
+![Weather App Screenshot](screenshot.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Dynamic weather data from API: The app fetches real-time weather data from a weather API based on the selected city and country.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- City & Country wise weather data: Users can enter the name of the city and country to fetch the corresponding weather data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Sign In/Sign Out: Users can sign in to access additional features like saving favorite cities and syncing preferences across devices.
 
-### `npm test`
+- Favorites Cities (Requires Sign In): Users can mark cities as favorites only after signing in. Once signed in, the option to mark a city as a favorite will be available. These favorite cities will be displayed on a separate page for quick access.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Dark Theme: The app supports a dark theme for better visibility during nighttime usage.
 
-### `npm run build`
+- Temperature Converter: Users can switch between Celsius and Fahrenheit to view temperature readings in their preferred units.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React: Front-end user interface is built using the React library.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Redux: State management for weather data and user preferences.
 
-### `npm run eject`
+- Axios: Library for making API requests.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Firebase (optional): Used for user authentication and saving favorite cities.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository and navigate to the project folder.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies using npm or yarn:
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Set up your environment variables:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Create a `.env` file based on the `.env.example` file provided.
+   - Add your weather API key and any other necessary configurations.
 
-### Code Splitting
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+5. Open your browser and go to `http://localhost:3000` to view the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## How to Use
 
-### Making a Progressive Web App
+1. Home Page:
+   - Enter the city name and country code in the input fields.
+   - Click the "Fetch Weather" button to get the current weather data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Sign In/Sign Out:
+   - Click the "Sign In" button to authenticate and access additional features.
+   - After signing in, the "Sign Out" option will be available in the user menu.
 
-### Advanced Configuration
+3. Favorites Cities:
+   - After signing in, click on the "Add to Favorites" button (heart icon) on the weather card to mark a city as a favorite.
+   - Go to the "Favorites" page to see all your favorite cities.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Theme:
+   - Toggle between dark and light themes using the theme switcher in the user menu.
 
-### Deployment
+5. Temperature Conversion:
+   - Switch between Celsius and Fahrenheit using the temperature unit switcher.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Please note that the "Favorites Cities" feature requires the user to sign in to access. If a user is not signed in, they won't be able to mark cities as favorites. The favorite cities functionality is tied to the user's account and will be saved and retrieved from the database accordingly.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
