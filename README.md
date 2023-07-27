@@ -2,7 +2,9 @@
 
 Welcome to the Weather App! This is a dynamic weather application that allows users to fetch weather data for cities and countries, mark favorite cities, and toggle between dark and light themes. The app also provides temperature conversion functionality between Celsius and Fahrenheit. The data is fetched using Redux for efficient state management.
 
-![Weather App Screenshot](screenshot.png)
+<img width="960" alt="Screenshot 2023-07-27 13 13 21" src="https://github.com/Raunak2002/React-weather-app/assets/73553425/107aa5f2-7ad0-42f6-895d-ec9144a81fba">
+
+<img width="960" alt="Screenshot 2023-07-27 13 13 42" src="https://github.com/Raunak2002/React-weather-app/assets/73553425/326fb9b8-9122-4176-b9de-7fb6e5d9a20e">
 
 ## Features
 
