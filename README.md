@@ -28,7 +28,7 @@ Welcome to the Weather App! This is a dynamic weather application that allows us
 
 - Axios: Library for making API requests.
 
-- Firebase (optional): Used for user authentication and saving favorite cities.
+- Firebase: Used for user authentication and saving favorite cities.
 
 ## Setup Instructions
 
