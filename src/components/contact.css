@@ -1,0 +1,46 @@
+.contact_section{
+    color: var(--button-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    .project_description{
+        width: 67%;
+        font-size: 15px;
+        font-weight: 450;
+        line-height: 1.6;
+    }
+}
+  
+.buttons>button{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 8px 18px;
+    width: 150px;
+    border: none;
+    border-radius: 00.4rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--button-color);
+    background-color: var(--button-background);
+}
+
+.buttons>button:hover{
+    cursor: pointer;
+    background-color: var(--button-background-hover);
+}
+
+button>p{
+    margin-left: 4px;
+}
+
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
